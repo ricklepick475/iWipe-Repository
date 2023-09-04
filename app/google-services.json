@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "155612574681",
+    "project_id": "iwipe-51bf3",
+    "storage_bucket": "iwipe-51bf3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155612574681:android:8465aef15d08ecc4771fc8",
+        "android_client_info": {
+          "package_name": "com.example.iwipe_repository"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155612574681-sbto72qpmm38cp9e20g23mmh0j72uan0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX2XqReSnFZLEDo6A4qJa3Pj-a0jnK7-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155612574681-sbto72qpmm38cp9e20g23mmh0j72uan0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155612574681:android:58c91f6b402a85a9771fc8",
+        "android_client_info": {
+          "package_name": "com.iwipe.certification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155612574681-sbto72qpmm38cp9e20g23mmh0j72uan0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX2XqReSnFZLEDo6A4qJa3Pj-a0jnK7-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155612574681-sbto72qpmm38cp9e20g23mmh0j72uan0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
