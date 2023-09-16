@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectID">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="122dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iwipe_logo" />
+
+    <TextView
+        android:id="@+id/scannerInfo"
+        android:layout_width="350dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="30dp"
+        android:text="Select the type of document you wish to scan"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="353dp"
+        android:layout_height="81dp"
+        android:text="Select one of the follwing ID formats that you wish to use to verify your account"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <ImageButton
+        android:id="@+id/drivers"
+        android:layout_width="355dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/drivers_template"
+        android:background="@null"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <ImageButton
+        android:id="@+id/passport"
+        android:layout_width="355dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="31dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drivers"
+        app:srcCompat="@drawable/passport_template" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
