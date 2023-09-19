@@ -16,6 +16,8 @@ public class VerifyIDInfo extends AppCompatActivity {
 
         TextView missingID = findViewById(R.id.noID);
 
+        ImageButton selectID = findViewById(R.id.selectID);
+
         missingID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,6 +25,17 @@ public class VerifyIDInfo extends AppCompatActivity {
                 startActivity(noID);
             }
         });
+
+        selectID.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent selectID = new Intent(VerifyIDInfo.this, SelectID.class);
+                startActivity(selectID);
+            }
+        });
     }
+
+
+
 }
 
