@@ -43,7 +43,7 @@
         android:layout_marginStart="31dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="27dp"
-        android:text="Select one of the follwing ID formats that you wish to use to verify your account"
+        android:text="Select one of the following ID formats that you wish to use to verify your account"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
