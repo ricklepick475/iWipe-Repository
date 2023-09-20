@@ -9,20 +9,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class GetStarted extends AppCompatActivity {
+public class PaymentScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_get_started);
+        setContentView(R.layout.activity_payment_screen);
 
-        Button getStartedButton = findViewById(R.id.getStartedButton);
+        Button loginNow = findViewById(R.id.loginHereNow);
 
-        getStartedButton.setOnClickListener(new View.OnClickListener() {
+        loginNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent getStartedButton = new Intent(GetStarted.this, PaymentScreen.class);
-                startActivity(getStartedButton);
+                Intent loginNow = new Intent(PaymentScreen.this, LoginUserPage.class);
+                startActivity(loginNow);
             }
         });
 

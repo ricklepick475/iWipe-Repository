@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentScreen">
+
+    <TextView
+        android:id="@+id/paymentTitle"
+        android:layout_width="225dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="93dp"
+        android:gravity="center"
+        android:text="Payment"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cardType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="65dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentTitle"
+        app:srcCompat="@drawable/card_type" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardType"
+        app:srcCompat="@drawable/government_button" />
+
+    <TextView
+        android:id="@+id/paymentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:text="PAYMENT AMOUNT"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/paymentAmount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="164dp"
+        android:text="$$$$$$$"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/nameOnCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="18dp"
+        android:text="NAME ON CARD"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNameOnCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNameOnCard"
+        android:layout_width="324dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/textbox_colour"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/cardNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="271dp"
+        android:layout_marginBottom="8dp"
+        android:text="CARD NUMBER"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCardNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCardNumber"
+        android:layout_width="324dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/textbox_colour"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1234567890"
+        app:layout_constraintBottom_toTopOf="@+id/securityCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/expiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="15dp"
+        android:text="EXPIRY DATE"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDateOfCard"
+        app:layout_constraintEnd_toStartOf="@+id/securityCode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCardNumber" />
+
+    <TextView
+        android:id="@+id/securityCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="15dp"
+        android:text="SECURITY CODE"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSecurityCode"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDateOfCard"
+        android:layout_width="215dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/textbox_colour"
+        android:ems="10"
+        android:inputType="date"
+        android:text="12/2023"
+        app:layout_constraintBottom_toTopOf="@+id/postalCode"
+        app:layout_constraintEnd_toStartOf="@+id/editTextSecurityCode"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSecurityCode"
+        android:layout_width="105dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/textbox_colour"
+        android:ems="10"
+        android:inputType="number"
+        android:text="123"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextDateOfCard" />
+
+    <TextView
+        android:id="@+id/postalCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="280dp"
+        android:text="POSTAL CODE"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="555dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPostalAddress"
+        android:layout_width="324dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/textbox_colour"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="3036"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postalCode" />
+
+    <Button
+        android:id="@+id/loginHereNow"
+        android:layout_width="324dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/pink_buttons"
+        android:backgroundTint="@color/pink_buttons"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:theme="@style/Button.Pink"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iwipe_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
