@@ -17,6 +17,8 @@ public class SelectID extends AppCompatActivity {
         ImageButton driverID = findViewById(R.id.drivers);
         ImageButton passportID = findViewById(R.id.passport);
         ImageButton cardID = findViewById(R.id.card);
+
+        // Each ID is represented by its own button
         driverID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
