@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Q3Placeholder">
+
+    <TextView
+        android:id="@+id/quizTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="24dp"
+        android:text="Final Evaluation"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/quizDescription3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/quizDescription3"
+        android:layout_width="331dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:text="You will have 60 minutes to complete the exam. The evaluation consists of
+50 multiple-choice questions. Each question has only one correct answer.
+Please select the best answer for each question and mark it on the answer
+sheet. You must score at least 98% to pass the exam."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="390dp"
+        android:layout_height="535dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/q3"
+                android:layout_width="296dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="97dp"
+                android:text="Q3 Placeholder"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/q3Correct"
+                android:layout_width="298dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="62dp"
+                android:layout_marginBottom="27dp"
+                android:text="Test Answer (Correct)"
+                android:background="@color/pink_buttons2"
+                android:backgroundTint="@color/pink_buttons2"
+                app:layout_constraintBottom_toTopOf="@+id/q3wrong1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/q3wrong1"
+                android:layout_width="298dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="62dp"
+                android:layout_marginBottom="27dp"
+                android:text="Test Answer (Incorrect)"
+                android:background="@color/pink_buttons2"
+                android:backgroundTint="@color/pink_buttons2"
+                app:layout_constraintBottom_toTopOf="@+id/q3wrong2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/q3wrong2"
+                android:layout_width="298dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="62dp"
+                android:layout_marginBottom="27dp"
+                android:text="Test Answer (Incorrect)"
+                android:background="@color/pink_buttons2"
+                android:backgroundTint="@color/pink_buttons2"
+                app:layout_constraintBottom_toTopOf="@+id/next3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/next3"
+                android:layout_width="192dp"
+                android:layout_height="91dp"
+                android:layout_marginStart="168dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="59dp"
+                android:text="Next Question"
+                android:background="@color/pink_buttons"
+                android:backgroundTint="@color/pink_buttons"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

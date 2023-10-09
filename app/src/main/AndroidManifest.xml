@@ -12,6 +12,21 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".Q5Placeholder"
+            android:exported="false" />
+        <activity
+            android:name=".Q4Placeholder"
+            android:exported="false" />
+        <activity
+            android:name=".Q3Placeholder"
+            android:exported="false" />
+        <activity
+            android:name=".Q2Placeholder"
+            android:exported="false" />
+        <activity
+            android:name=".Q1Placeholder"
+            android:exported="false" />
+        <activity
             android:name=".PaymentScreen"
             android:exported="false" />
         <activity
