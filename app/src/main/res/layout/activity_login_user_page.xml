@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="81dp"
                     android:layout_marginBottom="13dp"
-                    android:text="N A M E"
+                    android:text="E M A I L"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
                     app:layout_constraintStart_toStartOf="parent" />

@@ -16,14 +16,13 @@ public class Q5Placeholder extends AppCompatActivity {
 
         Button endQuiz = findViewById(R.id.end);
 
-        // Testing purposes, quiz should take user back to main menu
-//        endQuiz.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent nextQuestion3 = new Intent(Q5Placeholder.this, LoginUserPage.class);
-//                startActivity(nextQuestion3);
-//            }
-//        });
+        endQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Q5Placeholder.this, LoginUserPage.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

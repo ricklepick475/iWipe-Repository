@@ -21,10 +21,9 @@ public class PaymentScreen extends AppCompatActivity {
         loginNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent loginNow = new Intent(PaymentScreen.this, LoginUserPage.class);
-                startActivity(loginNow);
+                Intent intent = new Intent(PaymentScreen.this, Q1Placeholder.class);
+                startActivity(intent);
             }
         });
-
     }
 }
