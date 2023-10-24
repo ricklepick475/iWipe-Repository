@@ -210,6 +210,36 @@ public class FbHelper {
                     }
                 });
     }
+    public interface OnPasswordLoadedListener {
+        void onPasswordLoaded(String password);
+    }
+    public void getPasswordForEmail(String email, final OnPasswordLoadedListener listener) {
+        Query query = usersRef.orderByChild("Email").equalTo(email);
 
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    for (DataSnapshot userSnapshot : dataSnapshot.getChildren()) {
+                        User user = userSnapshot.getValue(User.class);
+                        if (user != null) {
+                            // Retrieve the password associated with the email
+                            String password = user.getPassword();
+                            listener.onPasswordLoaded(password);
+                            return;
+                        }
+                    }
+                }
+                // Email not found
+                listener.onPasswordLoaded(null);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.e(TAG, "Failed to retrieve password for email: " + databaseError.getMessage());
+                listener.onPasswordLoaded(null);
+            }
+        });
+    }
 
 }
